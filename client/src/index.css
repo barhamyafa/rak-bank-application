@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*
+  Configuration For Using Tailwind css
+*/
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/*
+  Configuration For Theme Color
+*/
+.theme-light {
+  --neutralBg: theme('colors.white');
+  --neutralText: theme('colors.gray.900');
+  --inputBg: theme('colors.neutral.200');
+}
+
+.theme-dark {
+  --neutralBg: theme('colors.blue.900');
+  --neutralText: theme('colors.white');
+  --inputBg: theme('colors.gray.500');
+  --dark: theme('saturate.50');
+}
